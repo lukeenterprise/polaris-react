@@ -48,6 +48,16 @@ $primary-action-button-width: rem(100px);
   flex: 1 1 0%;
 }
 
+.newDesignLanguageTitle {
+  @include text-emphasis-strong;
+  font-size: rem(24px);
+  line-height: rem(28px);
+
+  @include when-typography-not-condensed {
+    font-size: rem(20px);
+  }
+}
+
 .PrimaryAction {
   align-self: stretch;
 
