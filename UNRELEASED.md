@@ -8,6 +8,8 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 
 ### Enhancements
 
+- **`UnstyledButton`:** Added `loading` prop to apply `role` and `aria-busy` attributes ([#3494](https://github.com/Shopify/polaris-react/pull/3494))
+
 ### Bug fixes
 
 ### Documentation
@@ -17,5 +19,7 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 ### Dependency upgrades
 
 ### Code quality
+
+- **`Button`:** Reduced redundant code repeated within `UnstyledButton` ([#3494](https://github.com/Shopify/polaris-react/pull/3494))
 
 ### Deprecations
