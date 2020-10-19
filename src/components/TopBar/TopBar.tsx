@@ -99,7 +99,7 @@ export const TopBar: React.FunctionComponent<TopBarProps> & {
       </div>
     );
   } else if (logo) {
-    contextMarkup = (
+    const logoMarkup = (
       <div className={styles.LogoContainer}>
         <UnstyledLink
           url={logo.url || ''}
@@ -114,6 +114,11 @@ export const TopBar: React.FunctionComponent<TopBarProps> & {
           />
         </UnstyledLink>
       </div>
+    );
+    contextMarkup = showNavigationToggle ? (
+      <div className={styles.LogoDisplayContainer}>{logoMarkup}</div>
+    ) : (
+      logoMarkup
     );
   }
 
